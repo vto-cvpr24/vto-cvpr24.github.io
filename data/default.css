@@ -253,3 +253,26 @@ tr.row_type_A td {
 tr.row_type_B td {
 	padding: 10px 10px;
 }
+
+tr.row_type_expandable {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+tr.row_type_expandable :hover {
+background-color: #EEF4FD;
+}
+
+.expanded-row-content {
+border-top: none;
+display: grid;
+grid-column: 1/-1;
+justify-content: flex-start;
+color: #AEB1B3;
+font-size: 13px;
+background-color: #fff;
+}
+
+.hide-row {
+display: none;
+}

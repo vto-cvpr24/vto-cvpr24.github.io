@@ -85,7 +85,10 @@
                       src="data/gerard-pons-moll.png" height="170" /> </a></center>
               </td>
 
-
+              <td>
+                <center><a href="https://sunilhadap.github.io/"> <img alt src="data/sunil-hadap.jpg" height="170" />
+                  </a></center>
+              </td>
             </tr>
             <tr>
               <td>
@@ -101,6 +104,11 @@
               <td>
                 <center>
                   <h3> Gerard Pons-Moll</h3>
+                </center>
+              </td>
+              <td>
+                <center>
+                  <h3> Sunil Hadap </h3>
                 </center>
               </td>
             </tr>
@@ -120,81 +128,13 @@
                   <font size="2">University of Tübingen</font>
                 </center>
               </td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-
-            <tr>
-              <td>
-                <center><a href="https://www.duygu-ceylan.com/"> <img alt src="data/duygu-ceylan.jpg" height="170" />
-                  </a></center>
-              </td>
-              <td>
-                <center><a href="https://sunilhadap.github.io/"> <img alt src="data/sunil-hadap.jpg" height="170" />
-                  </a></center>
-              </td>
-
-            </tr>
-            <tr>
-              <td>
-                <center>
-                  <h3> Duygu Ceylan</h3>
-                </center>
-              </td>
-              <td>
-                <center>
-                  <h3> Sunil Hadap </h3>
-                </center>
-              </td>
-
-            </tr>
-            <tr>
-              <td>
-                <center>
-                  <font size="2">Adobe</font>
-                </center>
-              </td>
               <td>
                 <center>
                   <font size="2">Amazon</font>
                 </center>
               </td>
-
             </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
+            
 
 
 
@@ -203,13 +143,233 @@
       </center>
       <br><br><br>
 
-      <h2>Invited Student Speakers</h2>
-
-      TBD
-
-
+      <h2>Invited Short Talks</h2>
+      <p></p>
       <center>
+        <table  style="width:100%">
+          <tr class="row_type_expandable">
+            <td>
+              <center> <strong> Title </strong> </center>
+            </td>
+            <td>
+              <center> <strong> Presenter </strong> </center>
+            </td>
+          </tr>
+          <tr></tr>
 
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>  M&M VTO: Multi-Garment Virtual Try-On and Editing </center>
+            </td>
+            <td>
+              <center>  Luyang Zhu </br> <it> University of Washington </it> </center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> We present M&M VTO–a mix and match virtual try-on method that takes as input multiple garment
+                images, text description for garment layout and an image of a person. An example input includes: an image of a shirt, an
+                image of a pair of pants, "rolled sleeves, shirt tucked in", and an image of a person. The output is a visualization of
+                how those garments (in the desired layout) would look like on the given person. Key contributions of our method are: 1)
+                a single stage diffusion based model, with no super resolution cascading, that allows to mix and match multiple garments
+                at 1024x512 resolution preserving and warping intricate garment details, 2) architecture design (VTO UNet Diffusion
+                Transformer) to disentangle denoising from person specific features, allowing for a highly effective finetuning strategy
+                for identity preservation (6MB model per individual vs 4GB achieved with, e.g., dreambooth finetuning); solving a common
+                identity loss problem in current virtual try-on methods, 3) layout control for multiple garments via text inputs
+                specifically finetuned over PaLI-3 for virtual try-on task. Experimental results indicate that M&M VTO achieves
+                state-of-the-art performance both qualitatively and quantitatively, as well as opens up new opportunities for virtual
+                try-on via language-guided and multi-garment try-on.
+              
+            </td>
+          </tr>
+          <tr></tr>
+
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>  
+                Photorealistic virtual try-on from unconstrained designs 
+              </center>
+            </td>
+            <td>
+              <center>  Shuliang Ning & Xiaoguang Han </br> <it> The Chinese University of Hong Kong </it></center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> In this talk, we'll introduce a novel approach, ucVTON, for photorealistic virtual try-on of personalized clothing on
+                human images. Unlike previous methods limited by input types, ours allows flexible style (text or image) and texture
+                (full garment, cropped sections, or patches) specifications. To tackle the challenge of full garment entanglement, we
+                use a two-stage pipeline to separate style and texture. We first generate a human parsing map for desired style and then
+                composite textures onto it based on input. Our method introduces hierarchical CLIP features and position encoding in
+                VTON for complex, non-stationary textures, setting a new standard in fashion editing.
+              
+            </td>
+          </tr>
+
+          <tr></tr>
+
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>  Mobile Fitting Room: On-device Virtual Try-on via Diffusion Models </center>
+            </td>
+            <td>
+              <center>  Pratham Mehta </br> <it> Georgia Institute of Technology </it></center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> The growing digital landscape of fashion e-commerce calls for interactive and user-friendly
+                interfaces for virtually trying on clothes. Traditional try-on methods grapple with challenges in adapting to diverse
+                backgrounds, poses, and subjects. While newer methods, utilizing the recent advances of diffusion models, have achieved
+                higher-quality image generation, the human-centered dimensions of mobile interface delivery and privacy concerns remain
+                largely unexplored. We present Mobile Fitting Room, the first on-device diffusion-based virtual try-on system. To
+                address multiple inter-related technical challenges such as high-quality garment placement and model compression for
+                mobile devices, we present a novel technical pipeline and an interface design that enables privacy preservation and user
+                customization. A usage scenario highlights how our tool can provide a seamless, interactive virtual try-on experience
+                for customers and provide a valuable service for fashion e-commerce businesses.
+              
+            </td>
+          </tr>
+          <tr></tr>
+
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>  Real-time Video Virtual Try-on Frameworks on mobile devices and data challenges </center>
+            </td>
+            <td>
+              <center>  Ruowei (Irene) Jiang </br> <it> ModiFace </it> </center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> With recent advances in content generation and rendering tasks using generative models, real-time video virtual try-on
+                remains challenging, especially on mobile devices and web browsers. We present our framework and a series of works that
+                bridge the gap between state-of-the-art neural networks and real-world challenges, constrained by device and data
+                limitations.
+
+
+              
+            </td>
+          </tr>
+          <tr></tr>
+
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>     Makeup Prior Models for 3D Facial Makeup Estimation and Applications </center>
+            </td>
+            <td>
+              <center>     Xingchao Yang </br> <it> CyberAgent & University of Tsukuba </it> </center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> We introduce two types of makeup prior models—PCA-based and StyleGAN2-based—to enhance
+                existing 3D face prior models. These priors are pivotal in estimating 3D makeup patterns from single makeup face images.
+                Such patterns play a significant role in a broad spectrum of makeup-related applications, substantially enriching
+                virtual try-on technologies with more realistic and customizable experiences. Our contributions support crucial
+                functionalities, including 3D makeup face reconstruction, user-friendly makeup editing, makeup removal, makeup transfer,
+                and interpolation.
+
+
+              
+            </td>
+          </tr>
+          <tr></tr>
+
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>     What limits the performance of makeup transfer? </center>
+            </td>
+            <td>
+              <center>     Dr. Zhaoyang Sun  </br> <it> Wuhan University of Technology      </it>        </center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> Makeup transfer aims to realistically and naturally reproduce diverse makeup styles onto a
+                given face image. Due to the inherent unsupervised nature of makeup transfer, most previous approaches adopt the
+                pseudo-ground-truth-guided strategy for model training. In this talk, we first reveal that the quality of the pseudo
+                ground truth is the key factor limiting the performance of makeup transfer. Next, we propose a Content-Style Decoupled
+                Makeup Transfer (CSD-MT) method, which works in a purely unsupervised manner and thus eliminates the negative effects of
+                generating PGTs. Finally, extensive quantitative and qualitative analyses show the effectiveness of our CSD-MT method.
+
+
+              
+            </td>
+          </tr>
+          <tr></tr>
+
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>     Generating Animatable Layered Assets from a Single Scan </center>
+            </td>
+            <td>
+              <center>     Taeksoo Kim & Byungjun Kim </br> <it> Seoul National University </it> </center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> We present a framework that takes as input a single-layer clothed 3D human mesh and decomposes
+                it into complete multi-layered 3D assets. The outputs can then be combined with other assets to create novel clothed
+                human avatars with any pose. We first separate the input mesh using the 3D surface segmentation extracted from
+                multi-view 2D segmentations. Then we synthesize the missing geometry of different layers in both posed and canonical
+                spaces using a novel pose-guided Score Distillation Sampling (SDS) loss. Once we complete inpainting high-fidelity 3D
+                geometry, we also apply the same SDS loss to its texture to obtain the complete appearance including the initially
+                occluded regions. Through a series of decomposition steps, we obtain multiple layers of 3D assets in a shared canonical
+                space normalized in terms of poses and human shapes, hence supporting effortless composition to novel identities and
+                reanimation with novel poses.
+
+              
+            </td>
+          </tr>
+          <tr></tr>
+
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>     StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On </center>
+            </td>
+            <td>
+              <center>    Jeongho Kim </br> <it> Korea Advanced Institute of Science & Technology </it> </center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> Given a clothing image and a person image, an image-based virtual try-on aims to generate a
+                customized image that appears natural and accurately reflects the characteristics of the clothing image. In this
+                presentation, we introduce StableVITON, learning the semantic correspondence between the clothing and the human body
+                within the latent space of the pre-trained diffusion model in an end-to-end manner. Our proposed zero cross-attention
+                blocks not only preserve the clothing details by learning the semantic correspondence but also generate high-fidelity
+                images by utilizing the inherent knowledge of the pre-trained model in the warping process. Through our proposed novel
+                attention total variation loss and applying augmentation, we achieve the sharp attention map, resulting in a more
+                precise representation of clothing details. StableVITON shows state-of-the-art performance over existing virtual try-on
+                models in both qualitative and quantitative results. Moreover, through the evaluation of a trained model on multiple
+                datasets, StableVITON demonstrates its promising quality in a real-world setting.
+              
+            </td>
+          </tr>
+          <tr></tr>
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>     Integrating Learning-based Virtual Try-On in Fashion: Challenges and Advances
+              </center>
+            </td>
+            <td>
+              <center>
+                    Lena Hong & Chaerin Kong </br> <it> NXN Labs </it>
+
+              </center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> Learning-based Virtual Try-On (VTO) has garnered significant attention for their potential to revolutionize the fashion industry. This field expands in impact across different segments of the fashion value chain, highlighting the distinct technical priorities from garment detail preservation for brands to size accuracy for consumers, and generative controllability in early design stages.
+                As an emerging startup in this space, we address two principal challenges: visual hallucination and high-resolution
+                synthesis. In effort to overcome the limitations of end-to-end feed-forward approach, we present our modular pipeline
+                for visual hallucination, through a sequence of garment sanitization, signature component localization, and precise
+                stitching. This methodology enhances the production quality by maintaining the fidelity of the garment's visual details.
+                For high-resolution synthesis, we identify the inadequacy of conventional upsampling techniques in meeting the fashion
+                industry's specific demands. To this end, we train our own super-resolution model, leveraging adversarial training to
+                significantly improve texture detail and visual quality in upscaled images. We’re excited to share the ongoing
+                challenges and our competitive efforts within the industry to push the boundaries of current methodologies.
+              
+            </td>
+          </tr>
+          <tr>
+
+          </tr>
+
+        </table>
 
       </center>
       <br><br><br>
@@ -338,6 +498,13 @@
           </table>
         </center>
       </p>
+
+      <script>
+        const toggleRow = (element) => {
+          element.getElementsByClassName('expanded-row-content')[0].classList.toggle('hide-row');
+          console.log(event);
+        }
+      </script>
 
       <h2>Contact Info</h2>
       <p>E-mail: vtocvpr24 AT gmail.com</p>
