@@ -22,7 +22,7 @@
       </h1><br>
       <h2>
         <center>
-          <span style="font-size:92%;color:#777;font-weight:normal">17th June, 2024, afternoon @ CVPR 2024 in Seattle, CA,
+          <span style="font-size:92%;color:#777;font-weight:normal">17th June, 2024, 1:30 PM to 6 PM @ CVPR 2024 in Seattle, CA,
             USA</span><br /><br />
           <span style="font-size:92%;color:#777;font-weight:normal">Venue: Seattle Convention Center, Room TBD</span>
         </center>
@@ -353,7 +353,10 @@
             </td>
             <td class='expanded-row-content'>
               
-                <strong>Abstract</strong> Learning-based Virtual Try-On (VTO) has garnered significant attention for their potential to revolutionize the fashion industry. This field expands in impact across different segments of the fashion value chain, highlighting the distinct technical priorities from garment detail preservation for brands to size accuracy for consumers, and generative controllability in early design stages.
+                <strong>Abstract</strong> Learning-based Virtual Try-On (VTO) has garnered significant attention for their potential to revolutionize the fashion
+                industry. This field expands in impact across different segments of the fashion value chain, highlighting the distinct
+                technical priorities from garment detail preservation for brands to size accuracy for consumers, and generative
+                controllability in early design stages.
                 As an emerging startup in this space, we address two principal challenges: visual hallucination and high-resolution
                 synthesis. In effort to overcome the limitations of end-to-end feed-forward approach, we present our modular pipeline
                 for visual hallucination, through a sequence of garment sanitization, signature component localization, and precise
@@ -362,6 +365,35 @@
                 industry's specific demands. To this end, we train our own super-resolution model, leveraging adversarial training to
                 significantly improve texture detail and visual quality in upscaled images. We’re excited to share the ongoing
                 challenges and our competitive efforts within the industry to push the boundaries of current methodologies.
+              
+            </td>
+          </tr>
+          <tr></tr>
+          <tr class="row_type_expandable" onClick='toggleRow(this)'>
+            <td>
+              <center>     Diffuse to Choose: Enriching Image Conditioned Inpainting in Latent Diffusion Models for Virtual Try-All
+              </center>
+            </td>
+            <td>
+              <center>
+                Mehmet Saygin Seyfioglu </br> <it> University of Washington </it>
+
+              </center>
+            </td>
+            <td class='expanded-row-content'>
+              
+                <strong>Abstract</strong> As online shopping is growing, the ability for buyers to virtually visualize products in their
+                settings—a phenomenon we define as "Virtual Try-All"—has become crucial. Recent diffusion models inherently contain a
+                world model, rendering them suitable for this task within an inpainting context. However, traditional image-conditioned
+                diffusion models often fail to capture the fine-grained details of products. In contrast, personalization-driven models
+                such as DreamPaint are good at preserving the item's details but they are not optimized for real-time applications. We
+                present "Diffuse to Choose," a novel diffusion-based image-conditioned inpainting model that efficiently balances fast
+                inference with the retention of high-fidelity details in a given reference item while ensuring accurate semantic
+                manipulations in the given scene content. Our approach is based on incorporating fine-grained features from the
+                reference image directly into the latent feature maps of the main diffusion model, alongside with a perceptual loss to
+                further preserve the reference item's details. We conduct extensive testing on both in-house and publicly available
+                datasets, and show that Diffuse to Choose is superior to existing zero-shot diffusion inpainting methods as well as
+                few-shot diffusion personalization algorithms like DreamPaint.
               
             </td>
           </tr>
