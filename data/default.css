@@ -239,13 +239,13 @@ table#program td:nth-child(1) {
     width: 110px;
 }
 
-tr.keynote{
+table.schedule tr.keynote{
     background-color: #bbdaf5;
 }
-tr.shorttalks{
+table.schedule tr.shorttalks{
     background-color: #f0f0f0;
 }
-tr.other{
+table.schedule tr.other{
     background-color: #c4c3c3;
 }
 
