@@ -212,15 +212,7 @@ img {
 
 
 
-tr.keynote{
-    background-color: #bbdaf5;
-}
-tr.shorttalks{
-    background-color: #f0f0f0;
-}
-tr.other{
-    background-color: #c4c3c3;
-}
+
 table.schedule {
     border-color: #999;
     border-style: none;
@@ -245,6 +237,16 @@ table#program td:nth-child(2) {
 table#program td:nth-child(1) {
     text-align: center;
     width: 110px;
+}
+
+tr.keynote{
+    background-color: #bbdaf5;
+}
+tr.shorttalks{
+    background-color: #f0f0f0;
+}
+tr.other{
+    background-color: #c4c3c3;
 }
 
 tr.row_type_A {
