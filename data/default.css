@@ -212,8 +212,15 @@ img {
 
 
 
-
-
+tr.keynote{
+    background-color: #bbdaf5;
+}
+tr.shorttalks{
+    background-color: #f0f0f0;
+}
+tr.other{
+    background-color: #c4c3c3;
+}
 table.schedule {
     border-color: #999;
     border-style: none;
